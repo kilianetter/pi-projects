@@ -8,6 +8,9 @@ from statistics import mean
 T = []
 RH = []
 
+function avg(lst):
+	average = sum(lst) / len(lst)
+	return average
 
 while True:
 	now = dt.datetime.now()
@@ -22,8 +25,8 @@ while True:
 		time.sleep(55)
 	
 	if (int(now.strftime("%M"))%5) == 0:
-		mean_t = mean(T)
-		mean_rh = mean(RH)
+		mean_t = avg(T)
+		mean_rh = avg(RH)
 		print(f'[{now.strftime("%Y-%m-%d - %H:%M:%S")}] - Temp: {mean_t}°C - Humidity: {mean_rh}%')
 		T = []
 		RH = []

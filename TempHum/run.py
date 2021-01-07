@@ -18,7 +18,7 @@ while True:
 		
 		T.append(temperature)
 		RH.append(humidity)
-		print(f'[{now.strftime("%Y-%m-%d - %H:%M:%S")}] array length: {len(T)})
+		print(f'[{now.strftime("%Y-%m-%d - %H:%M:%S")}] Temperature array length: {len(T)} // Value: {T[len(T)]})
 		time.sleep(55)
 	
 	if (int(now.strftime("%M"))%5) == 0:

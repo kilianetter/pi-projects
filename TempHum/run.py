@@ -8,7 +8,7 @@ from statistics import mean
 T = []
 RH = []
 
-function avg(lst):
+def avg(lst):
 	average = sum(lst) / len(lst)
 	return average
 

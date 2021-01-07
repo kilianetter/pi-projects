@@ -18,7 +18,7 @@ while True:
 		
 		T.append(temperature)
 		RH.append(humidity)
-		print(len(T)
+		print(len(T))
 		time.sleep(55)
 	
 	if (int(now.strftime("%M"))) == 5:

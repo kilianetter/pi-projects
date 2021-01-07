@@ -21,7 +21,7 @@ while True:
 		print(f'[{now.strftime("%Y-%m-%d - %H:%M:%S")}] array length: {len(T)})
 		time.sleep(55)
 	
-	if (int(now.strftime("%M"))) == 5:
+	if (int(now.strftime("%M"))%5) == 0:
 		mean_t = mean(T)
 		mean_rh = mean(RH)
 		print(f'[{now.strftime("%Y-%m-%d - %H:%M:%S")}] - Temp: {mean_t}°C - Humidity: {mean_rh}%')

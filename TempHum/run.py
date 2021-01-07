@@ -10,7 +10,7 @@ RH = []
 
 def avg(lst):
 	print(sum(lst))
-	print(len(lst)
+	print(len(lst))
 	average = sum(lst) / len(lst)
 	return average
 
